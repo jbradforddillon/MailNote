@@ -1,0 +1,16 @@
+/*
+
+Created by Brad Dillon, 05/26/2012.
+I was simply scratching an itch.
+
+*/
+
+
+html				{ height: 100%; }
+body 				{ height: 100%; width: 100%; font: 15px/1.4 "Helvetica Neue", Helvetica, sans-serif; color: #000; background: #fff; }
+h1					{ margin: 0; font-family: "Helvetica Neue" }
+form				{ margin: 1em 0; }
+input[type=email] 	{ width: 286px; padding: 8px; margin: 0 0 0.5em; font-size: 20px; }
+input[type=submit]	{ width: 304px; padding: 8px; font-size: 20px; margin-left: 0; }
+p					{ margin-top: 0; }
+footer				{ padding-bottom: 0.5em; font-size: 12px; }
