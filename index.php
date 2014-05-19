@@ -32,7 +32,7 @@ if($step == 3) {
 			var i = setInterval(function() {
 			    if (document.readyState === "complete") {
 			        clearInterval(i);
-					var e = "<? echo $e; ?>";
+					var e = "<? echo htmlspecialchars($e); ?>";
 					window.location = "mailto:" + e + "?subject=Note To Inbox";
 			    }
 			}, 10);
@@ -64,7 +64,7 @@ if($step == 1) {
 			<p>When you click 'Ok', the mail app will present a new email message. Simply cancel the message and then bookmark this page, or add it to your homescreen.</p>
 			<p>Any time you launch it, a new message will be started, pre-addressed to you.</p>
 			<form action="./" method="get">
-				<input type="hidden" name="email" value="<? echo $e; ?>"/>
+				<input type="hidden" name="email" value="<? echo htmlspecialchars($e); ?>"/>
 				<input type="submit" value="Ok"/>
 			</form>
 		</section>
@@ -75,7 +75,7 @@ if($step == 1) {
 			<p>Launching your email client now.</p>
 			<p>If you haven't already, bookmark this page to easily email notes to yourself in the future</p>
 			<form action="./" method="get">
-				<input type="hidden" name="email" value="<? echo $e; ?>"/>
+				<input type="hidden" name="email" value="<? echo htmlspecialchars($e); ?>"/>
 				<input type="submit" value="Send Another"/>
 			</form>
 			<form action="./">
